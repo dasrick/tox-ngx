@@ -6,9 +6,16 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { BreadcrumbsComponent } from './core/breadcrumb/breadcrumb.component';
+
+// Layouts
+import { FullLayoutComponent } from './core/layout-admin/layout-admin.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FullLayoutComponent,
+    BreadcrumbsComponent
   ],
   imports: [
     BrowserModule,
