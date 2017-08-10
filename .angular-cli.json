@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "tox",
       "styles": [
+        "scss/style.scss",
         "styles.scss"
       ],
       "scripts": [],

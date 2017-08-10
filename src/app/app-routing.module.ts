@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // Layouts
-import { FullLayoutComponent } from './core/layout-admin/layout-admin.component';
+import { LayoutAdminComponent } from './core/layout-admin/layout-admin.component';
+import { LayoutSimpleComponent } from './core/layout-simple/layout-simple.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: FullLayoutComponent,
+    component: LayoutAdminComponent,
     data: {
       title: 'Home'
     },
@@ -22,11 +23,26 @@ const routes: Routes = [
         loadChildren: './dashboard/dashboard.module#DashboardModule'
       },
     ]
-  }
+  },
+  {
+    path: '',
+    component: LayoutSimpleComponent,
+    // data: {
+    //   title: 'Error'
+    // },
+    children: [
+      {
+        path: 'error',
+        loadChildren: './error/error.module#ErrorModule'
+      },
+    ]
+  },
+  {path : '**', redirectTo : 'error'}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

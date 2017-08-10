@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'tox-dashboard',
+  selector: 'tox-layout-admin',
   templateUrl: './layout-admin.component.html'
 })
-export class FullLayoutComponent implements OnInit {
+export class LayoutAdminComponent implements OnInit {
 
   public disabled = false;
   public status: { isopen: boolean } = {isopen: false};
