@@ -22,6 +22,10 @@ const routes: Routes = [
         path: 'dashboard',
         loadChildren: './dashboard/dashboard.module#DashboardModule'
       },
+      {
+        path: 'offersetups',
+        loadChildren: './offersetups/offersetups.module#OffersetupsModule'
+      },
     ]
   },
   {

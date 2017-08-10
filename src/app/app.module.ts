@@ -7,7 +7,12 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { ApiService } from './core/api.service';
 import { BreadcrumbsComponent } from './core/breadcrumb/breadcrumb.component';
+
+import { ConfigurationService } from './shared/configuration.service';
+import { NAV_DROPDOWN_DIRECTIVES } from './shared/nav-dropdown.directive';
+import { SIDEBAR_TOGGLE_DIRECTIVES } from './shared/sidebar.directive';
 
 // Layouts
 import { LayoutAdminComponent } from './core/layout-admin/layout-admin.component';
@@ -18,7 +23,9 @@ import { LayoutSimpleComponent } from './core/layout-simple/layout-simple.compon
     AppComponent,
     LayoutAdminComponent,
     LayoutSimpleComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    NAV_DROPDOWN_DIRECTIVES,
+    SIDEBAR_TOGGLE_DIRECTIVES
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,9 @@ import { LayoutSimpleComponent } from './core/layout-simple/layout-simple.compon
     {
       provide: LocationStrategy,
       useClass: HashLocationStrategy
-    }
+    },
+    ApiService,
+    ConfigurationService
   ],
   bootstrap: [AppComponent]
 })
