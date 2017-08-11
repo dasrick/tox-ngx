@@ -1,8 +1,9 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {HttpModule} from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormlyModule, FormlyBootstrapModule } from 'ng-formly';
 
 // import { CdkTableModule } from '@angular/cdk';
 
@@ -18,14 +19,13 @@ import {OffersetupsService} from './offersetups.service';
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
     RouterModule,
     HttpModule,
+    FormsModule,
+    ReactiveFormsModule,
+    FormlyModule.forRoot(),
+    FormlyBootstrapModule,
 
-    // CdkTableModule,
-
-    // MaterialComponentsModule,
     OffersetupsRouting
   ],
   declarations: [
