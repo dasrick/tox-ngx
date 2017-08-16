@@ -1,6 +1,4 @@
 [![github tag][github-tag-image]][github-tag-url]
-[![npm version][npm-version-image]][npm-version-url]
-[![npm downloads][npm-downloads-image]][npm-downloads-url]
 [![Dependency Status][david-image]][david-url]
 [![DevDependencies Status][david-dev-image]][david-dev-url]
 [![License][license-image]][license-url]
@@ -42,11 +40,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 [github-tag-image]: https://img.shields.io/github/tag/dasrick/tox-ngx.svg?style=flat-square
 [github-tag-url]: https://github.com/dasrick/tox-ngx
-
-[npm-version-image]: https://img.shields.io/npm/v/tox-ngx.svg?style=flat-square
-[npm-version-url]: https://www.npmjs.com/package/tox-ngx
-[npm-downloads-image]: https://img.shields.io/npm/dm/tox-ngx.svg?style=flat-square
-[npm-downloads-url]: https://www.npmjs.com/package/tox-ngx
 
 [david-image]: https://img.shields.io/david/dasrick/tox-ngx.svg?style=flat-square
 [david-url]: https://david-dm.org/dasrick/tox-ngx
