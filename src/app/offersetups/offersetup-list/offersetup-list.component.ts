@@ -26,7 +26,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 })
 export class OffersetupListComponent implements OnInit, AfterViewInit {
 
-  private offersetups: OffersetupModel[] = [];
+  public offersetups: OffersetupModel[] = [];
 
   constructor(private offersetupsService: OffersetupsService) {
   }
