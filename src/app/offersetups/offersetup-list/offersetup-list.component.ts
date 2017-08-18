@@ -5,14 +5,14 @@ import { OffersetupsService } from '../offersetups.service';
 import {OffersetupModel} from '../models';
 
 // import {DataSource} from '@angular/cdk';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/startWith';
-import 'rxjs/add/observable/merge';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/distinctUntilChanged';
-import 'rxjs/add/observable/fromEvent';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+// import { Observable } from 'rxjs/Observable';
+// import 'rxjs/add/operator/startWith';
+// import 'rxjs/add/observable/merge';
+// import 'rxjs/add/operator/map';
+// import 'rxjs/add/operator/debounceTime';
+// import 'rxjs/add/operator/distinctUntilChanged';
+// import 'rxjs/add/observable/fromEvent';
+// import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Component({
   selector: 'tox-offersetup-list',
@@ -22,7 +22,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
   //   '[@fadeInAnimation]': 'true'
   // },
   // animations: [fadeInAnimation],
-  providers: [OffersetupsService]
+  providers: [OffersetupsService],
 })
 export class OffersetupListComponent implements OnInit, AfterViewInit {
 

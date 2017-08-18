@@ -14,6 +14,8 @@ import { BreadcrumbsComponent } from './core/breadcrumb/breadcrumb.component';
 import { ConfigurationService } from './shared/configuration.service';
 import { NAV_DROPDOWN_DIRECTIVES } from './shared/nav-dropdown.directive';
 import { SIDEBAR_TOGGLE_DIRECTIVES } from './shared/sidebar.directive';
+// import { PipesModule } from './shared/pipes/pipes.module';
+import { TruncatePipe } from './shared/pipes/truncate.pipe';
 
 // Layouts
 import { LayoutAdminComponent } from './core/layout-admin/layout-admin.component';
@@ -26,7 +28,9 @@ import { LayoutSimpleComponent } from './core/layout-simple/layout-simple.compon
     LayoutSimpleComponent,
     BreadcrumbsComponent,
     NAV_DROPDOWN_DIRECTIVES,
-    SIDEBAR_TOGGLE_DIRECTIVES
+    SIDEBAR_TOGGLE_DIRECTIVES,
+    // PipesModule
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,12 @@ import { LayoutSimpleComponent } from './core/layout-simple/layout-simple.compon
     FormlyModule.forRoot(),
     FormlyBootstrapModule,
 
-    AppRoutingModule
+    AppRoutingModule,
+    // PipesModule,
+  ],
+  exports: [
+    // PipesModule,
+    TruncatePipe
   ],
   providers: [
     {

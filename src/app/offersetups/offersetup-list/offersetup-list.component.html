@@ -1,9 +1,39 @@
 <div class="offersetup-list-container" fxLayout="column" fxLayoutAlign="start stretch">
   <div fxLayout="row" fxLayoutAlign="center stretch" fxLayoutWrap="wrap">
 
-  hu buh ... {{ offersetups.length }}
+    hu buh ... {{ offersetups.length }}
 
     <p>... und ab gehts ... <a [routerLink]="['/offersetups/new']">NEW</a></p>
 
   </div>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Region ID</th>
+      <th>Time Period</th>
+      <th>Passengers</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let offersetup of offersetups">
+      <td>{{ offersetup.id }}</td>
+      <td>{{ offersetup.title | slice:0:25 }}</td>
+      <td>{{ offersetup.regionId }} (no mapping)</td>
+      <td>
+        <div *ngIf="offersetup.timePeriod.startDate">Start Date: {{ offersetup.timePeriod.startDate | date:'dd.MM.y' }}</div>
+        <div *ngIf="offersetup.timePeriod.endDate">End Date: {{ offersetup.timePeriod.endDate }}</div>
+        <div *ngIf="offersetup.timePeriod.duration">Duration: {{ offersetup.timePeriod.duration }}</div>
+      </td>
+      <td>Anzahl: {{ offersetup.passengers.length }} (not final)</td>
+      <td>
+        <a class="btn btn-sm btn-primary" [routerLink]="['/offersetups/' + offersetup.id]">EDIT</a>
+        <a class="btn btn-sm btn-danger " aria-disabled="true" [routerLink]="['/offersetups/' + offersetup.id]">DELETE</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
 </div>
