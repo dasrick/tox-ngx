@@ -19,6 +19,16 @@
           "glob": "**/*",
           "input": "../node_modules/font-awesome/css",
           "output": "./assets/css"
+        },
+        {
+          "glob": "**/*",
+          "input": "../node_modules/simple-line-icons/fonts",
+          "output": "./assets/fonts"
+        },
+        {
+          "glob": "**/*",
+          "input": "../node_modules/simple-line-icons/css",
+          "output": "./assets/css"
         }
       ],
       "index": "index.html",
