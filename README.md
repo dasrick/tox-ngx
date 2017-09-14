@@ -1,3 +1,12 @@
+[![github tag][github-tag-image]][github-tag-url]
+[![Build Status][travis-image]][travis-url]
+[![Dependency Status][david-image]][david-url]
+[![DevDependencies Status][david-dev-image]][david-dev-url]
+[![DependencyCI Status][dependencyci-image]][dependencyci-url]
+[![License][license-image]][license-url]
+
+***
+
 # tox-ngx
 
 playground of angular 4 app ... admin ... bootstrap vs. material + formly ... 
@@ -28,3 +37,25 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+***
+
+[github-tag-image]: https://img.shields.io/github/tag/dasrick/tox-ngx.svg?style=flat-square
+[github-tag-url]: https://github.com/dasrick/tox-ngx
+
+[travis-image]: https://img.shields.io/travis/dasrick/tox-ngx.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dasrick/tox-ngx
+
+[david-image]: https://img.shields.io/david/dasrick/tox-ngx.svg?style=flat-square
+[david-url]: https://david-dm.org/dasrick/tox-ngx
+[david-dev-image]: https://img.shields.io/david/dev/dasrick/tox-ngx.svg?style=flat-square
+[david-dev-url]: https://david-dm.org/dasrick/tox-ngx?type=dev
+
+[dependencyci-image]: https://dependencyci.com/github/dasrick/tox-ngx/badge
+[dependencyci-url]: https://dependencyci.com/github/dasrick/tox-ngx
+
+[david-optional-image]: https://img.shields.io/david/optional/dasrick/tox-ngx.svg?style=flat-square
+[david-peer-image]: https://img.shields.io/david/peer/dasrick/tox-ngx.svg?style=flat-square
+
+[license-image]: https://img.shields.io/github/license/dasrick/tox-ngx.svg?style=flat-square
+[license-url]: https://github.com/dasrick/tox-ngx/blob/master/LICENSE
