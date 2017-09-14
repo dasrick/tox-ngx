@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+// bootstrap overwrite
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./scss/bootstrap_overwrite/bootstrap";
+
+// own vars/mixins
+
+// own components
