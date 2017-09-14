@@ -45,6 +45,6 @@
     "stylelint-config-sass-guidelines": "^3.1.0",
     "ts-node": "^3.0.0",
     "tslint": "^5.6.0",
-    "typescript": "~2.2.2"
+    "typescript": "~2.5.0"
   }
 }
