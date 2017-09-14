@@ -16,7 +16,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * ✅ (v0.2.0) bootstrap 4.0.0-beta
 * ✅ (v0.1.0) font awesome 4.7
 * loading bar
-* ng-bootstrap
+* ✅ (v0.3.0) ng-bootstrap
 * ng-formly
 * favicons for multiple devices
 * main font as part of dist (not linked via cdn)
