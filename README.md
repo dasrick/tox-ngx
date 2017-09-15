@@ -13,6 +13,8 @@ playground of angular 4 app ... admin dasgboard ...
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+[Demo](https://tox-ngx.herokuapp.com/)
+
 ### some ToDos
 
 * ✅ (v0.2.0) bootstrap 4.0.0-beta
@@ -26,7 +28,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * basic alert service
 * translation
 * spinner at app loading page
-* heroku instance incl auto deployment
+* ✅ (v0.4.0) heroku instance incl auto deployment
 
 ## Development server
 
