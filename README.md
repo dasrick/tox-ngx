@@ -13,6 +13,8 @@ playground of angular 4 app ... admin dasgboard ...
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+### some ToDos
+
 * ✅ (v0.2.0) bootstrap 4.0.0-beta
 * ✅ (v0.1.0) font awesome 4.7
 * loading bar
@@ -22,6 +24,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * main font as part of dist (not linked via cdn)
 * basic api service
 * basic alert service
+* translation
+* spinner at app loading page
+* heroku instance incl auto deployment
 
 ## Development server
 
