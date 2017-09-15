@@ -9,6 +9,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { SharedModule } from './shared/shared.module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -35,6 +37,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
