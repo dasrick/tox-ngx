@@ -4,6 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -11,6 +12,7 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         NgbModule.forRoot(),
+        TranslateModule.forRoot(),
       ],
       declarations: [
         AppComponent,
