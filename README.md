@@ -26,7 +26,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * main font as part of dist (not linked via cdn)
 * basic api service
 * basic alert service
-* translation
+* ✅ (v0.6.0) translation (samples in en/de)
 * ✅ (v0.5.0) spinner at app loading page
 * ✅ (v0.4.0) heroku instance incl auto deployment
 

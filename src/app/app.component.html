@@ -3,7 +3,8 @@
 </h1>
 <p>font awesome example <i class="fa fa-bars"></i></p>
 <p>boostrap example <a href="#" class="btn btn-primary">Button</a></p>
-<p>ng-bbotstrap example </p>
+<p>ng-bootstrap example </p>
+<p>translate: {{ 'teststring' | translate }} - {{ 'common.hello' | translate }} </p>
 <p *ngFor="let alert of alerts">
   <ngb-alert [type]="alert.type" (close)="closeAlert(alert)">{{ alert.message }}</ngb-alert>
 </p>
