@@ -13,6 +13,35 @@
 
 </head>
 <body>
-  <tox-root>Loading...</tox-root>
+  <tox-root>
+    <style type="text/css">
+      @keyframes spinner {
+        to {transform: rotate(360deg);}
+      }
+
+      .spinner:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        margin-left: -20px;
+        border-radius: 50%;
+
+        border: 4px solid transparent;
+        border-top-color: #c03;
+        border-bottom-color: #333;
+        animation: spinner .8s ease infinite;
+      }
+
+      body {
+        background-color: #f6f6f6;
+      }
+    </style>
+    <div class="spinner"></div>
+  </tox-root>
 </body>
 </html>
