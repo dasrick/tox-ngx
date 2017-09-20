@@ -5,5 +5,13 @@
 @import "./scss/bootstrap_overwrite/bootstrap";
 
 // own vars/mixins
+@import "scss/variables";
+@import "scss/mixins";
 
 // own components
+@import "scss/layout-admin";
+
+@import "scss/headerbar";
+@import "scss/footerbar";
+@import "scss/sidebar";
+@import "scss/mainbar";

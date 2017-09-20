@@ -1,0 +1,88 @@
+// WIP ... temp vars ... maybe with or without responsive suffix
+
+$header-height: 70px;
+$footer-height: 0;
+$sidebar-width: 200px;
+
+html,
+body,
+.pc {
+  height: 100%;
+}
+
+.pc {
+  position: relative;
+}
+
+.hb {
+  height: $header-height;
+  top: 0;
+  z-index: 3;
+}
+
+.sb {
+  width: $sidebar-width;
+  left: 0;
+  transform: translateX(($sidebar-width * -1)) translateY(0) translateZ(0);
+  z-index: 2;
+}
+
+.mb {
+  right: 0;
+  left: 0;
+}
+
+.fb {
+  height: $footer-height;
+  bottom: 0;
+}
+
+.hb,
+.fb,
+.sb,
+.mb {
+  position: absolute;
+}
+
+.hb,
+.fb {
+  width: 100%;
+}
+
+.sb,
+.mb {
+  top: $header-height;
+  bottom: $footer-height;
+
+  transition: transform .26s cubic-bezier(.47, 0, .745, .715);
+  will-change: transform;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.show-sidebar {
+  .sb {
+    transform: translateX(0) translateY(0) translateZ(0);
+  }
+
+  .mb {
+    left: $sidebar-width;
+  }
+}
+
+// =====================================================================================================================
+// responsive section
+
+// responsive section - up
+//@include media-breakpoint-up(xs) { ... }
+//@include media-breakpoint-up(sm) { ... }
+//@include media-breakpoint-up(md) { ... }
+//@include media-breakpoint-up(lg) { ... }
+//@include media-breakpoint-up(xl) { ... }
+
+// responsive section - down
+//@include media-breakpoint-down(xs) {}
+//@include media-breakpoint-down(sm) {}
+//@include media-breakpoint-down(md) {}
+//@include media-breakpoint-down(lg) {}

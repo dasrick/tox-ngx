@@ -1,10 +1,27 @@
 import { NgModule } from '@angular/core';
 
-// import { CounterService } from './counter.service';
+import { ApiService } from './services/api.service';
+
+// import { AlertComponent } from './alert/alert.component';
+import { AlertService } from './alert/alert.service';
 
 @NgModule({
+  imports: [
+    // CommonModule,
+    // FormsModule,
+    // ReactiveFormsModule,
+    // HttpModule,
+    // RouterModule
+  ],
+  declarations: [
+    // AlertComponent,
+  ],
+  exports: [
+    // AlertComponent,
+  ],
   providers: [
-    // CounterService
+    AlertService,
+    ApiService,
   ]
 })
 export class SharedModule {

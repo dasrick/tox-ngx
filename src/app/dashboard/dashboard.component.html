@@ -1,0 +1,949 @@
+<h1>
+  {{title}}
+</h1>
+<p>font awesome example <i class="fa fa-bars"></i></p>
+<p>boostrap example <a href="#" class="btn btn-primary">Button</a></p>
+<p>translate: {{ 'teststring' | translate }} - {{ 'common.hello' | translate }} </p>
+
+<p>ng-bootstrap example </p>
+<ngb-alert [type]="'success'">{{ 'common.hello' | translate }}</ngb-alert>
+
+<hr>
+<hr>
+<hr>
+
+<div class="animated fade-in">
+  <h2>Hello World!</h2>
+  <ul class="list-unstyled">
+    <h4>ToDos</h4>
+    <li>
+      <i class="fa fa-times-circle"></i> font icon: material
+    </li>
+    <li>
+      <i class="fa fa-check-circle-o"></i> primary color: bootstrap default
+    </li>
+    <li>
+      <i class="fa fa-check-circle-o"></i> content: fixed width - not fluid
+    </li>
+    <li>
+      <i class="fa fa-circle-o"></i> content: fixed width - responsive part
+    </li>
+    <li>
+      <i class="fa fa-check-circle-o"></i> sidebar: bg dark (exlude final styles)
+    </li>
+    <li>
+      <i class="fa fa-check-circle-o"></i> add alert service (exlude final styles)
+    </li>
+    <li>
+      <i class="fa fa-circle-o"></i> responsive template
+    </li>
+    <li>
+      <i class="fa fa-circle-o"></i> forms pristine
+    </li>
+    <li>
+      <i class="fa fa-circle-o"></i> forms invalid
+    </li>
+    <li>
+      <i class="fa fa-circle-o"></i> loading bar
+    </li>
+    <li>
+      <i class="fa fa-circle-o"></i> cleanup scss
+    </li>
+    <li>
+      <i class="fa fa-check-circle-o"></i> update bootstrap from alpha.6 to beta
+    </li>
+    <li>
+      <i class="fa fa-circle-o"></i> fix breadcrumb at reload
+    </li>
+    <li>
+      <i class="fa fa-check-circle-o"></i> loading bar
+    </li>
+  </ul>
+</div>
+
+<hr>
+
+<section class="row">
+  <div class="col-md-12 col-lg-8">
+
+    <div class="jumbotron">
+      <h1 class="mb-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p class="lead"><a class="btn btn-primary btn-lg mt-2" href="#" role="button">Learn more</a></p>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3 class="card-title">Recent Orders</h3>
+
+        <div class="dropdown card-title-btn-container">
+          <button class="btn btn-sm btn-subtle" type="button"><em class="fa fa-list-ul"></em> View All</button>
+
+          <button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
+
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><em class="fa fa-search mr-1"></em> More info</a>
+            <a class="dropdown-item" href="#"><em class="fa fa-thumb-tack mr-1"></em> Pin Window</a>
+            <a class="dropdown-item" href="#"><em class="fa fa-remove mr-1"></em> Close Window</a></div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>Order #</th>
+
+              <th>Product</th>
+
+              <th>Customer</th>
+
+              <th>Status</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+              <td>0001</td>
+
+              <td>Product Name 1</td>
+
+              <td>Customer 1</td>
+
+              <td>Complete</td>
+            </tr>
+
+            <tr>
+              <td>0002</td>
+
+              <td>Product Name 2</td>
+
+              <td>Customer 2</td>
+
+              <td>Complete</td>
+            </tr>
+
+            <tr>
+              <td>0003</td>
+
+              <td>Product Name 3</td>
+
+              <td>Customer 3</td>
+
+              <td>Processing</td>
+            </tr>
+
+            <tr>
+              <td>0004</td>
+
+              <td>Product Name 4</td>
+
+              <td>Customer 4</td>
+
+              <td>Pending</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3 class="card-title">Articles</h3>
+
+        <div class="dropdown card-title-btn-container">
+          <button class="btn btn-sm btn-subtle" type="button"><em class="fa fa-list-ul"></em> View All</button>
+
+          <button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
+
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><em class="fa fa-search mr-1"></em> More info</a>
+            <a class="dropdown-item" href="#"><em class="fa fa-thumb-tack mr-1"></em> Pin Window</a>
+            <a class="dropdown-item" href="#"><em class="fa fa-remove mr-1"></em> Close Window</a></div>
+        </div>
+
+        <h6 class="card-subtitle mb-2 text-muted">Latest news</h6>
+
+        <div class="divider" style="margin-top: 1rem;"></div>
+
+        <div class="articles-container">
+          <div class="article border-bottom">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-2 date">
+                  <div class="large">30</div>
+
+                  <div class="text-muted">Jun</div>
+                </div>
+
+                <div class="col-10">
+                  <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sodales nisl. Donec malesuada orci ornare risus finibus feugiat.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="clear"></div>
+          </div><!--End .article-->
+
+          <div class="article">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-2 date">
+                  <div class="large">30</div>
+
+                  <div class="text-muted">Jun</div>
+                </div>
+
+                <div class="col-10">
+                  <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sodales nisl. Donec malesuada orci ornare risus finibus feugiat.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="clear"></div>
+          </div><!--End .article-->
+
+          <div class="article">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-2 date">
+                  <div class="large">30</div>
+
+                  <div class="text-muted">Jun</div>
+                </div>
+
+                <div class="col-10">
+                  <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sodales nisl. Donec malesuada orci ornare risus finibus feugiat.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="clear"></div>
+          </div><!--End .article-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 col-lg-4">
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3 class="card-title">Top Users</h3>
+
+        <h6 class="card-subtitle mb-2 text-muted">Most active this week</h6>
+
+        <div class="user-progress justify-center">
+          <div class="col-sm-3 col-md-2" style="padding: 0;">
+            <img src="https://secure.gravatar.com/avatar/8f6292bc38f6d7e5e211d8f1dc1d9466.jpg?s=512&r=g&d=mm" alt="profile photo" class="circle profile-photo" style="width: 100%; max-width: 100px;">
+          </div>
+
+          <div class="col-sm-6 col-md-8">
+            <h6 class="pt-1">Username 1</h6>
+
+            <div class="progress ">
+              <div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-md-2">
+            <div class="progress-label">75%</div>
+          </div>
+        </div>
+
+        <div class="user-progress justify-center">
+          <div class="col-sm-3 col-md-2" style="padding: 0;">
+            <img src="https://secure.gravatar.com/avatar/8f6292bc38f6d7e5e211d8f1dc1d9466.jpg?s=512&r=g&d=mm" alt="profile photo" class="circle profile-photo" style="width: 100%; max-width: 100px;">
+          </div>
+
+          <div class="col-sm-6 col-md-8">
+            <h6 class="pt-1">Username 2</h6>
+
+            <div class="progress ">
+              <div class="progress-bar bg-primary" style="width: 50%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-md-2">
+            <div class="progress-label">50%</div>
+          </div>
+        </div>
+
+        <div class="user-progress justify-center">
+          <div class="col-sm-3 col-md-2" style="padding: 0;">
+            <img src="https://secure.gravatar.com/avatar/8f6292bc38f6d7e5e211d8f1dc1d9466.jpg?s=512&r=g&d=mm" alt="profile photo" class="circle profile-photo" style="width: 100%; max-width: 100px;">
+          </div>
+
+          <div class="col-sm-6 col-md-8">
+            <h6 class="pt-1">Username 3</h6>
+
+            <div class="progress ">
+              <div class="progress-bar bg-primary" style="width: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-md-2">
+            <div class="progress-label">25%</div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div id="calendar"></div>
+
+        <div class="divider"></div>
+
+        <h3 class="card-title">Timeline</h3>
+
+        <h6 class="card-subtitle mb-2 text-muted">What's coming up</h6>
+
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge"><em class="fa fa-camera"></em></div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h5 class="timeline-title mt-2">Lorem ipsum</h5>
+              </div>
+
+              <div class="timeline-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge primary"><em class="fa fa-link"></em></div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h5 class="timeline-title mt-2">Dolor</h5>
+              </div>
+
+              <div class="timeline-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><em class="fa fa-paperclip"></em></div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h5 class="timeline-title mt-2">Sit amet</h5>
+              </div>
+
+              <div class="timeline-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3 class="card-title">Todo List</h3>
+
+        <div class="dropdown card-title-btn-container">
+          <button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
+
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><em class="fa fa-search mr-1"></em> More info</a>
+            <a class="dropdown-item" href="#"><em class="fa fa-thumb-tack mr-1"></em> Pin Window</a>
+            <a class="dropdown-item" href="#"><em class="fa fa-remove mr-1"></em> Close Window</a></div>
+        </div>
+
+        <h6 class="card-subtitle mb-2 text-muted">A simple checklist</h6>
+
+        <ul class="todo-list mt-2">
+          <li class="todo-list-item">
+            <div class="form-check">
+              <input type="checkbox" id="checkbox-1" />
+
+              <label for="checkbox-1">Make coffee</label>
+
+              <div class="float-right action-buttons"><a href="#" class="trash"><em class="fa fa-trash"></em></a></div>
+            </div>
+          </li>
+          <li class="todo-list-item">
+            <div class="form-check">
+              <input type="checkbox" id="checkbox-2" />
+
+              <label for="checkbox-2">Check emails</label>
+
+              <div class="float-right action-buttons"><a href="#" class="trash"><em class="fa fa-trash"></em></a></div>
+            </div>
+          </li>
+          <li class="todo-list-item">
+            <div class="form-check">
+              <input type="checkbox" id="checkbox-3" />
+
+              <label for="checkbox-3">Reply to Jane</label>
+
+              <div class="float-right action-buttons"><a href="#" class="trash"><em class="fa fa-trash"></em></a></div>
+            </div>
+          </li>
+          <li class="todo-list-item">
+            <div class="form-check">
+              <input type="checkbox" id="checkbox-4" />
+
+              <label for="checkbox-4">Work on the new design</label>
+
+              <div class="float-right action-buttons"><a href="#" class="trash"><em class="fa fa-trash"></em></a></div>
+            </div>
+          </li>
+          <li class="todo-list-item">
+            <div class="form-check">
+              <input type="checkbox" id="checkbox-5" />
+
+              <label for="checkbox-5">Get feedback</label>
+
+              <div class="float-right action-buttons"><a href="#" class="trash"><em class="fa fa-trash"></em></a></div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="card-footer todo-list-footer">
+          <div class="input-group">
+            <input id="btn-input" type="text" class="form-control input-md" placeholder="Add new task" /><span class="input-group-btn">
+													<button class="btn btn-primary btn-md" id="btn-todo">Add</button>
+											</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="row">
+      <div class="col-sm-12 col-md-6 ">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="card-title">Top Users</h3>
+
+            <div class="dropdown card-title-btn-container">
+              <button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><em class="fa fa-search mr-1"></em> More info</a>
+                <a class="dropdown-item" href="#"><em class="fa fa-thumb-tack mr-1"></em> Pin Window</a>
+                <a class="dropdown-item" href="#"><em class="fa fa-remove mr-1"></em> Close Window</a></div>
+            </div>
+
+            <h6 class="card-subtitle mb-2 text-muted">Most active this week</h6>
+
+            <div class="user-progress justify-center">
+              <div class="col-sm-3 col-md-2 col-xl-1" style="padding: 0;">
+                <img src="https://secure.gravatar.com/avatar/8f6292bc38f6d7e5e211d8f1dc1d9466.jpg?s=512&r=g&d=mm" alt="profile photo" class="circle profile-photo" style="width: 100%; max-width: 100px;">
+              </div>
+
+              <div class="col-sm-6 col-md-8 col-xl-10">
+                <h6 class="pt-1">Username 1</h6>
+
+                <div class="progress ">
+                  <div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-2 col-xl-1">
+                <div class="progress-label">75%</div>
+              </div>
+            </div>
+
+            <div class="user-progress justify-center">
+              <div class="col-sm-3 col-md-2 col-xl-1" style="padding: 0;">
+                <img src="https://secure.gravatar.com/avatar/8f6292bc38f6d7e5e211d8f1dc1d9466.jpg?s=512&r=g&d=mm" alt="profile photo" class="circle profile-photo" style="width: 100%; max-width: 100px;">
+              </div>
+
+              <div class="col-sm-6 col-md-8 col-xl-10">
+                <h6 class="pt-1">Username 2</h6>
+
+                <div class="progress ">
+                  <div class="progress-bar bg-primary" style="width: 50%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-2 col-xl-1">
+                <div class="progress-label">50%</div>
+              </div>
+            </div>
+
+            <div class="user-progress justify-center">
+              <div class="col-sm-3 col-md-2 col-xl-1" style="padding: 0;">
+                <img src="https://secure.gravatar.com/avatar/8f6292bc38f6d7e5e211d8f1dc1d9466.jpg?s=512&r=g&d=mm" alt="profile photo" class="circle profile-photo" style="width: 100%; max-width: 100px;">
+              </div>
+
+              <div class="col-sm-6 col-md-8 col-xl-10">
+                <h6 class="pt-1">Username 3</h6>
+
+                <div class="progress ">
+                  <div class="progress-bar bg-primary" style="width: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-2 col-xl-1">
+                <div class="progress-label">25%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="card-title">Todo List</h3>
+
+            <div class="dropdown card-title-btn-container">
+              <button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><em class="fa fa-search mr-1"></em> More info</a>
+                <a class="dropdown-item" href="#"><em class="fa fa-thumb-tack mr-1"></em> Pin Window</a>
+                <a class="dropdown-item" href="#"><em class="fa fa-remove mr-1"></em> Close Window</a></div>
+            </div>
+
+            <h6 class="card-subtitle mb-2 text-muted">A simple checklist</h6>
+
+            <ul class="todo-list mt-2">
+              <li class="todo-list-item">
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-1" />
+
+                  <label for="checkbox-1">Make coffee</label>
+
+                  <div class="float-right action-buttons"><a href="#" class="trash"><em class="fa fa-trash"></em></a></div>
+                </div>
+              </li>
+              <li class="todo-list-item">
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-2" />
+
+                  <label for="checkbox-2">Check emails</label>
+
+                  <div class="float-right action-buttons"><a href="#" class="trash"><em class="fa fa-trash"></em></a></div>
+                </div>
+              </li>
+              <li class="todo-list-item">
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-3" />
+
+                  <label for="checkbox-3">Reply to Jane</label>
+
+                  <div class="float-right action-buttons"><a href="#" class="trash"><em class="fa fa-trash"></em></a></div>
+                </div>
+              </li>
+              <li class="todo-list-item">
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-4" />
+
+                  <label for="checkbox-4">Work on the new design</label>
+
+                  <div class="float-right action-buttons"><a href="#" class="trash"><em class="fa fa-trash"></em></a></div>
+                </div>
+              </li>
+              <li class="todo-list-item">
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-5" />
+
+                  <label for="checkbox-5">Get feedback</label>
+
+                  <div class="float-right action-buttons"><a href="#" class="trash"><em class="fa fa-trash"></em></a></div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="card-footer todo-list-footer">
+              <div class="input-group">
+                <input id="btn-input" type="text" class="form-control input-md" placeholder="Add new task" /><span class="input-group-btn">
+													<button class="btn btn-primary btn-md" id="btn-todo">Add</button>
+											</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="card-title">Calendar</h3>
+
+            <div class="dropdown card-title-btn-container">
+              <button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><em class="fa fa-search mr-1"></em> More info</a>
+                <a class="dropdown-item" href="#"><em class="fa fa-thumb-tack mr-1"></em> Pin Window</a>
+                <a class="dropdown-item" href="#"><em class="fa fa-remove mr-1"></em> Close Window</a></div>
+            </div>
+
+            <h6 class="card-subtitle mb-2 text-muted">What's coming up</h6>
+
+            <div id="calendar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="card-title">Contact Form</h3>
+
+            <div class="dropdown card-title-btn-container">
+              <button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><em class="fa fa-search mr-1"></em> More info</a>
+                <a class="dropdown-item" href="#"><em class="fa fa-thumb-tack mr-1"></em> Pin Window</a>
+                <a class="dropdown-item" href="#"><em class="fa fa-remove mr-1"></em> Close Window</a></div>
+            </div>
+
+            <h6 class="card-subtitle mb-2 text-muted">Subtitle</h6>
+
+            <form class="form-horizontal" action="" method="post">
+              <fieldset>
+                <!-- Name input-->
+                <div class="form-group">
+                  <label class="col-12 control-label no-padding" for="name">Name</label>
+
+                  <div class="col-12 no-padding">
+                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                  </div>
+                </div>
+
+                <!-- Email input-->
+                <div class="form-group">
+                  <label class="col-12 control-label no-padding" for="email">Your E-mail</label>
+
+                  <div class="col-12 no-padding">
+                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                  </div>
+                </div>
+
+                <!-- Message body -->
+                <div class="form-group">
+                  <label class="col-12 control-label no-padding" for="message">Your message</label>
+
+                  <div class="col-12 no-padding">
+                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                  </div>
+                </div>
+
+                <!-- Form actions -->
+                <div class="form-group">
+                  <div class="col-12 widget-right no-padding">
+                    <button type="submit" class="btn btn-primary btn-md float-right">Submit</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="card-title">Timeline</h3>
+
+            <div class="dropdown card-title-btn-container">
+              <button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><em class="fa fa-search mr-1"></em> More info</a>
+                <a class="dropdown-item" href="#"><em class="fa fa-thumb-tack mr-1"></em> Pin Window</a>
+                <a class="dropdown-item" href="#"><em class="fa fa-remove mr-1"></em> Close Window</a></div>
+            </div>
+
+            <h6 class="card-subtitle mb-2 text-muted">Vertical  Layout</h6>
+
+            <ul class="timeline">
+              <li>
+                <div class="timeline-badge"><em class="fa fa-camera"></em></div>
+
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5 class="timeline-title mt-2">Lorem ipsum</h5>
+                  </div>
+
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-badge primary"><em class="fa fa-link"></em></div>
+
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5 class="timeline-title mt-2">Dolor</h5>
+                  </div>
+
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-badge"><em class="fa fa-paperclip"></em></div>
+
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5 class="timeline-title mt-2">Sit amet</h5>
+                  </div>
+
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="row">
+  <div class="col-12 mb-2">
+    <h3 class="mb-4">Buttons</h3>
+
+    <h5 class="mb-2 mt-4 pl-1 text-muted">Small</h5>
+
+    <button type="button" class="btn btn-sm btn-primary">Primary</button>
+
+    <button type="button" class="btn btn-sm btn-secondary">Secondary</button>
+
+    <button type="button" class="btn btn-sm btn-success">Success</button>
+
+    <button type="button" class="btn btn-sm btn-info">Info</button>
+
+    <button type="button" class="btn btn-sm btn-warning">Warning</button>
+
+    <button type="button" class="btn btn-sm btn-danger">Danger</button>
+
+    <button type="button" class="btn btn-sm btn-link">Link</button>
+
+    <h5 class="mb-2 mt-4 pl-1 text-muted">Medium</h5>
+
+    <button type="button" class="btn btn-md btn-primary">Primary</button>
+
+    <button type="button" class="btn btn-md btn-secondary">Secondary</button>
+
+    <button type="button" class="btn btn-md btn-success">Success</button>
+
+    <button type="button" class="btn btn-md btn-info">Info</button>
+
+    <button type="button" class="btn btn-md btn-warning">Warning</button>
+
+    <button type="button" class="btn btn-md btn-danger">Danger</button>
+
+    <button type="button" class="btn btn-md btn-link">Link</button>
+
+    <h5 class="mb-2 mt-4 pl-1 text-muted">Large</h5>
+
+    <button type="button" class="btn btn-lg btn-primary">Primary</button>
+
+    <button type="button" class="btn btn-lg btn-secondary">Secondary</button>
+
+    <button type="button" class="btn btn-lg btn-success">Success</button>
+
+    <button type="button" class="btn btn-lg btn-info">Info</button>
+
+    <button type="button" class="btn btn-lg btn-warning">Warning</button>
+
+    <button type="button" class="btn btn-lg btn-danger">Danger</button>
+
+    <button type="button" class="btn btn-lg btn-link">Link</button>
+  </div>
+</section>
+
+<section class="row">
+  <div class="col-12 mb-2">
+    <h3 class="mt-4 mb-4">Alerts</h3>
+
+    <div class="alert alert-primary" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <em class="fa fa-comment mr-2"></em>
+      This is a primary alert—check it out!
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      This is a secondary alert—check it out!
+    </div>
+    <div class="alert alert-success" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <em class="fa fa-check-circle mr-2"></em>
+      This is a success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <em class="fa fa-minus-circle mr-2"></em>
+      This is a danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <em class="fa fa-exclamation-triangle mr-2"></em>
+      This is a warning alert—check it out!
+    </div>
+    <div class="alert alert-info" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <em class="fa fa-tag mr-2"></em>
+      This is a info alert—check it out!
+    </div>
+    <div class="alert alert-light" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      This is a light alert—check it out!
+    </div>
+    <div class="alert alert-dark" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      This is a dark alert—check it out!
+    </div>
+  </div>
+</section>
+
+<section class="row">
+  <div class="col-12">
+    <h3 class="mb-4">Basic Cards</h3>
+  </div>
+
+  <div class="col-lg-4 mb-4">
+    <div class="card mb-3">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Primary card title</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 mb-4">
+  <div class="card text-white bg-primary mb-3">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h4 class="card-title">Primary card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-lg-4 mb-4">
+  <div class="card text-white bg-secondary mb-3">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h4 class="card-title">Secondary card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-lg-4 mb-4">
+  <div class="card text-white bg-success mb-3">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h4 class="card-title">Success card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-lg-4 mb-4">
+  <div class="card text-white bg-danger mb-3">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h4 class="card-title">Danger card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-lg-4 mb-4">
+  <div class="card text-white bg-warning mb-3">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h4 class="card-title">Warning card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-lg-4 mb-4">
+  <div class="card text-white bg-info mb-3">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h4 class="card-title">Info card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-lg-4 mb-4">
+  <div class="card bg-light mb-3">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h4 class="card-title">Light card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-lg-4 mb-4">
+  <div class="card text-white bg-dark mb-3">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h4 class="card-title">Dark card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+<section class="row">
+  <div class="col-12">
+    <h3 class="mt-4 mb-4">Cards with Navigation</h3>
+  </div>
+
+  <div class="col-lg-6 mb-4">
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+        </ul>
+      </div>
+
+      <div class="card-body">
+        <h4 class="card-title">Special title treatment</h4>
+
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-md btn-primary">Go somewhere</a></div>
+    </div>
+  </div>
+
+  <div class="col-lg-6 mb-4">
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+          <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+        </ul>
+      </div>
+
+      <div class="card-body">
+        <h4 class="card-title">Special title treatment</h4>
+
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a></div>
+    </div>
+  </div>
+</section>
