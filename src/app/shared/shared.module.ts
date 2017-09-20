@@ -2,22 +2,19 @@ import { NgModule } from '@angular/core';
 
 import { ApiService } from './services/api.service';
 
-// import { AlertComponent } from './alert/alert.component';
 import { AlertService } from './alert/alert.service';
+import { HeaderbarComponent } from './headerbar/headerbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
-  imports: [
-    // CommonModule,
-    // FormsModule,
-    // ReactiveFormsModule,
-    // HttpModule,
-    // RouterModule
-  ],
+  imports: [],
   declarations: [
-    // AlertComponent,
+    HeaderbarComponent,
+    SidebarComponent,
   ],
   exports: [
-    // AlertComponent,
+    HeaderbarComponent,
+    SidebarComponent,
   ],
   providers: [
     AlertService,

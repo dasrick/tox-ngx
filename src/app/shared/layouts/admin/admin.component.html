@@ -1,35 +1,8 @@
 <div class="pc">
-  <div class="hb">
-    header-bar
-    <button class="btn-primary" (click)="toggleSidebar()">sidebaringer</button>
-    - -->{{ sidebarVisible }}<<-
-  </div>
-  <div class="sb">
-    <!--<div class="sb-header">sb-header</div>-->
-    <div class="sb-body">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fa fa-cog"></i>
-            <span>plong</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link active">
-            <i class="fa fa-cog"></i>
-            <span>plong</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fa fa-cog"></i>
-            <span>plong</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!--<div class="sb-footer">sb-footer</div>-->
-  </div>
+  <tox-headerbar></tox-headerbar>
+  <tox-sidebar></tox-sidebar>
+
+
   <div class="mb">
     <div class="container">
       <p>main-bar ".mb > .container" in abhängigkeit von breite+sidebarvisible</p>
