@@ -1,0 +1,14 @@
+.alerts {
+  // ToDo whole positioning NOT final ...
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.show-sidebar {
+  .alerts {
+    left: $sidebar-width;
+  }
+}
