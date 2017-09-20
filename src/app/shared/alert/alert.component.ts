@@ -27,7 +27,7 @@ export class AlertComponent implements OnInit {
 
       // add alert to array
       this.alerts.push(alert);
-      console.log('la componenta');
+      // console.log('la componenta');
 
       //
       // debounceTime.call(alert, 5000).subscribe(() => {
