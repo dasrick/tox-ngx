@@ -22,7 +22,7 @@ export class DashboardComponent implements OnInit {
 
 
   ngOnInit(): void {
-    // this.alertService.success('success');
+    this.alertService.success('success');
     // this.alertService.info('info');
     // this.alertService.warning('warning');
     // this.alertService.danger('danger');

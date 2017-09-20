@@ -3,18 +3,17 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { SharedModule } from './shared/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import {LayoutAdminComponent} from './shared/layouts/admin/admin.component';
+import { LayoutAdminComponent } from './shared/layouts/admin/admin.component';
+import { AlertComponent } from './shared/alert/alert.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -24,7 +23,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutAdminComponent
+    LayoutAdminComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
