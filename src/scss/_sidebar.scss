@@ -1,3 +1,31 @@
+@mixin sb-colors($color, $bg) {
+  color: $color;
+  background-color: $bg;
+}
+
 .sb {
-  background-color: #baffd4;
+  @include sb-colors($gray-600, $gray-900);
+
+  //.nav {
+  //}
+
+  //.nav-item {
+  //}
+
+  .nav-link {
+    @include sb-colors($gray-300, $gray-900);
+
+    &:hover {
+      @include sb-colors($white, darken($gray-900, 5%));
+    }
+
+    &.active {
+      @include sb-colors(theme-color("primary"), darken($gray-900, 5%));
+    }
+
+    > i {
+      color: $gray-600;
+      width: 1rem;
+    }
+  }
 }

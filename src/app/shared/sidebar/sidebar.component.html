@@ -1,26 +1,17 @@
 <div class="sb">
   <!--<div class="sb-header">sb-header</div>-->
   <div class="sb-body">
+
+    <p class="h6 m-0 px-3 pt-4 pb-2 text-uppercase">Menu Headline</p>
     <ul class="nav flex-column">
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="fa fa-cog"></i>
-          <span>plong</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link active">
-          <i class="fa fa-cog"></i>
-          <span>plong</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="fa fa-cog"></i>
-          <span>plong</span>
+      <li *ngFor="let menuItem of menuItems" class="nav-item">
+        <a class="nav-link p-3" [routerLink]="[menuItem.path]" routerLinkActive="active">
+          <i class="mr-1 {{menuItem.iconClass}}"></i>
+          <span>{{menuItem.title}}</span>
         </a>
       </li>
     </ul>
+
   </div>
   <!--<div class="sb-footer">sb-footer</div>-->
 </div>
