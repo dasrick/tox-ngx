@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // Layouts
-import { LayoutAdminComponent } from './shared/layouts/admin/admin.component';
+import { LayoutAdminComponent } from './shared/components/layout-admin/layout-admin.component';
 // import { LayoutSimpleComponent } from './shared/layouts/simple/simple.component';
 
 const routes: Routes = [
@@ -18,6 +18,10 @@ const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: './dashboard/dashboard.module#DashboardModule'
+      },
+      {
+        path: 'plong',
+        loadChildren: './plong/plong.module#PlongModule'
       },
       // {
       //   path: 'offerassets',
@@ -47,7 +51,7 @@ const routes: Routes = [
   //     },
   //   ]
   // },
-  {path : '**', redirectTo : 'error'}
+  {path: '**', redirectTo: 'error'}
 ];
 
 @NgModule({

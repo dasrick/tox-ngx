@@ -2,24 +2,30 @@ import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { AppComponent } from './app.component';
-import { AlertComponent } from './shared/alert/alert.component';
+// import { AlertComponent } from './shared/components/alert/alert.component';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SharedModule } from './shared/shared.module';
-import { TranslateModule } from '@ngx-translate/core';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { SharedModule } from './shared/shared.module';
+// import { TranslateModule } from '@ngx-translate/core';
+
+import { ServicesModule } from './shared/services/services.module';
+import { SharedComponentsModule } from './shared/components/shared-components.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
-        NgbModule.forRoot(),
-        TranslateModule.forRoot(),
-        SharedModule,
+        // NgbModule.forRoot(),
+        // TranslateModule.forRoot(),
+        // SharedModule,
+
+        ServicesModule.forRoot(),
+        SharedComponentsModule,
       ],
       declarations: [
         AppComponent,
-        AlertComponent
+        // AlertComponent
       ],
     }).compileComponents();
   }));

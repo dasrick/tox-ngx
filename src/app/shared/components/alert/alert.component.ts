@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Alert } from './alert.model';
-import { AlertService } from './alert.service';
+import { Alert } from '../../models/alert.model';
+import { AlertService } from '../../services/alert.service';
 
 // import { debounceTime } from 'rxjs/operator/debounceTime';
 
@@ -27,9 +27,6 @@ export class AlertComponent implements OnInit {
 
       // add alert to array
       this.alerts.push(alert);
-      // console.log('la componenta');
-
-      //
       // debounceTime.call(alert, 5000).subscribe(() => {
       //   console.log('all lal la');
       // });

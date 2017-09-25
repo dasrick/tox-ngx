@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { AlertService } from '../shared/services/alert.service';
 
 @Component({
-  templateUrl: 'dashboard.component.html'
+  templateUrl: 'plong.component.html'
 })
-export class DashboardComponent implements OnInit {
+export class PlongComponent implements OnInit {
 
-  title = 'Dashboard';  // ToDo recheck need
+  title = 'Plong';  // ToDo recheck need
 
   // public status: { isopen: boolean } = { isopen: false };
 
@@ -22,7 +22,7 @@ export class DashboardComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.alertService.success('success');
+    this.alertService.danger('danger');
     // this.alertService.info('info');
     // this.alertService.warning('warning');
     // this.alertService.danger('danger');

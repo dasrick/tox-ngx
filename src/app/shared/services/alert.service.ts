@@ -5,7 +5,7 @@ import { Subject } from 'rxjs/Subject';
 
 // import { debounceTime } from 'rxjs/operator/debounceTime';
 
-import { Alert } from './alert.model';
+import { Alert } from '../models/alert.model';
 
 @Injectable()
 export class AlertService {

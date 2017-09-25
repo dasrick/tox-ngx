@@ -10,6 +10,7 @@ export interface RouteInfo {
 // duplicates to routing configs ... i know
 export const ROUTES: RouteInfo[] = [
   {path: '/dashboard', title: 'Dashboard', iconClass: 'fa fa-tachometer'},
+  {path: '/plong', title: 'Plong', iconClass: 'fa fa-tachometer'},
   {path: '/offerteasers', title: 'Teasers', iconClass: 'fa fa-gift'},
   {path: '/offerassets', title: 'Assets', iconClass: 'fa fa-image'},
   {path: '/offersetups', title: 'Setups', iconClass: 'fa fa-cog'},
