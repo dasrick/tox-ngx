@@ -11,10 +11,10 @@ export interface RouteInfo {
 export const ROUTES: RouteInfo[] = [
   {path: '/dashboard', title: 'Dashboard', iconClass: 'fa fa-tachometer'},
   {path: '/plong', title: 'Plong', iconClass: 'fa fa-tachometer'},
-  {path: '/offerteasers', title: 'Teasers', iconClass: 'fa fa-gift'},
-  {path: '/offerassets', title: 'Assets', iconClass: 'fa fa-image'},
-  {path: '/offersetups', title: 'Setups', iconClass: 'fa fa-cog'},
-  {path: '/offertemplates', title: 'Templates', iconClass: 'fa fa-file-code-o'},
+  // {path: '/offerteasers', title: 'Teasers', iconClass: 'fa fa-gift'},
+  // {path: '/offerassets', title: 'Assets', iconClass: 'fa fa-image'},
+  // {path: '/offersetups', title: 'Setups', iconClass: 'fa fa-cog'},
+  // {path: '/offertemplates', title: 'Templates', iconClass: 'fa fa-file-code-o'},
 ];
 
 export interface SidebarItemTypes {

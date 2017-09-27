@@ -17,9 +17,9 @@ export class AppComponent {
     // translate.use('en');
 
     // combined version of translation setup and browser language detection
-    translate.addLangs(['en', 'de']);
-    const browserLang: string = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|de/) ? browserLang : 'en');
+    // translate.addLangs(['en', 'de']);
+    // const browserLang: string = translate.getBrowserLang();
+    // translate.use(browserLang.match(/en|de/) ? browserLang : 'en');
   }
 
 }
