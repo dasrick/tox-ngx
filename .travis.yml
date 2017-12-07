@@ -1,5 +1,7 @@
-sudo: false
+# https://docs.travis-ci.com/user/reference/overview/
 dist: trusty
+group: travis_lts
+sudo: false
 language: node_js
 node_js:
 - '6'
